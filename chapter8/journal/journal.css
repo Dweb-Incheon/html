@@ -1,0 +1,45 @@
+@font-face {
+	font-family: "Emblema One";
+	src: url("./EmblemaOne-Regular.ttf"), 
+	     url("./EmblemaOne-Regular.woff"); 
+}
+
+@font-face {
+	font-family: "Naver";
+	src: url("./NanumGothic.woff"), 
+	     url("./NanumGothic.eot"); 
+}
+
+body {
+  font-family:     Verdana, Geneva, Arial, sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  background-color: white;
+}
+h1, h2 {
+  font-family: "Naver";
+  color:           #cc6600;
+  border-bottom: solid #cc6600;
+  background-color:cornsilk;
+  /*text-decoration: underline overline;*/
+}
+
+h1 {
+  /*font-family:     "Emblema One", sans-serif;*/
+  font-size : 150%;
+  font-style: italic;
+  text-decoration: underline line-through overline;
+}
+
+h2 {
+  font-weight: normal;
+  font-size : 1.2em;
+}
+blockquote {
+  font-style: italic;
+  text-decoration: none;
+}
+
+p{
+  font-weight: normal;
+}

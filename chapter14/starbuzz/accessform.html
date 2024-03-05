@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="euc-kr">
+    <title>스타버즈 커피공장</title>
+	<link rel="stylesheet" href="starbuzz.css">
+	<link rel="stylesheet" href="accessform.css">
+  </head>
+  <body>
+
+    <h1>스타버즈 커피공장</h1>
+    <h2>아래 양식을 채운 후, “주문” 버튼을 클릭하세요</h2>
+
+    <form action="http://www.starbuzzcoffee.com/processorder.php" method="post">
+	<fieldset>
+		<legend>주문내역</legend>
+		<div class="tableRow">
+			<label for="beans">
+          		커피를 선택하세요:
+			</label>
+            <select id="beans" name="beans">
+              <option value="House Blend">하우스 블렌드</option>
+              <option value="Bolivia">쉐이드 그로운 볼리비아 수프레모</option>
+              <option value="Guatemala">유기농 과테말라 </option>
+              <option value="Kenya">케냐</option>
+            </select>
+		</div>
+		<div class="tableRow">
+			<label>유형:</label>
+			<p>
+           		<input type="radio" id="whole_beantype" name="beantype" value="whole"> 
+					<label for="whole_beantype">분쇄하지 않은 커피</label><br>
+            	<input type="radio" id="ground_beantype" name="beantype" value="ground" checked> 
+            		<label for="ground_beantype">분쇄한 커피</label>
+			</p>
+		</div>
+		<div class="tableRow">
+			<label for="bags">상품 개수:</label>
+			<input type="number" id="bags" name="bags" min="1" max="10">
+		</div>
+		<div class="tableRow">
+			<label for="date">배송일자:</label>
+			<input type="date" name="date">
+		</div>
+		<div class="tableRow">
+			<label>기타:</label>
+			<p>
+            	<input type="checkbox" id="giftwrap_extras" name="extras[]" value="giftwrap"> 
+					<label for="giftwrap_extras">선물 포장</label><br>
+            	<input type="checkbox" id="catalog_extras" name="extras[]" value="catalog" checked>
+            		<label for="catalog_extras">카탈로그 포함</label>
+			</p>
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend>배송지 주소</legend>
+		<div class="tableRow">
+			<label for="name">이름:</label>
+			<input type="text" id="name" name="name" value="" placeholder="Buckaroo Banzai" required> 
+		</div>
+		<div class="tableRow">
+			<label for="address">주소:</label>
+			<input type="text" id="address" name="address" value="" placeholder="Banzai Institute" required> 
+		</div>
+		<div class="tableRow">
+			<label for="city">도시:</label>
+			<input type="text" id="city" name="city" value="" placeholder="Los Angeles" required> 
+		</div>
+		<div class="tableRow">
+			<label for="state">지역:</label>
+			<input type="text" id="state" name="state" value="" placeholder="CA" required>
+		</div>
+		<div class="tableRow">
+			<label for="zip">우편번호:</label>
+			<input type="text" id="zip" name="zip" value="" placeholder="90050" required>
+		</div>
+		<div class="tableRow">
+			<label for="phone">전화번호:</label>
+			<input type="tel" id="phone" name="phone" value="" placeholder="310-555-1212" required>
+		</div>
+		<div class="tableRow">
+			<label for="comments">고객 요구사항:</label>
+            <textarea id="comments" name="comments"></textarea>
+		</div>
+		<div class="tableRow">
+			<label></label>
+			<input type="submit" value="주문">
+		</div>
+	</fieldset>
+    </form>
+  </body>
+</html>
+

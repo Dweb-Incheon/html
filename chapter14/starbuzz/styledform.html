@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="euc-kr">
+    <title>스타버즈 커피공장</title>
+	<link rel="stylesheet" href="starbuzz.css">
+	<link rel="stylesheet" href="styledform.css">
+  </head>
+  <body>
+
+    <h1>스타버즈 커피공장</h1>
+    <h2>아래 양식을 채운 후, “주문” 버튼을 클릭하세요</h2>
+
+    <form action="http://www.starbuzzcoffee.com/processorder.php" method="post">
+	<div class="tableRow">
+		<p>
+          커피를 선택하세요:
+		</p>
+		<p>
+            <select name="beans">
+              <option value="House Blend">하우스 블렌드</option>
+              <option value="Bolivia">쉐이드 그로운 볼리비아 수프레모</option>
+              <option value="Guatemala">유기농 과테말라 </option>
+              <option value="Kenya">케냐</option>
+            </select>
+		</p>
+	</div>
+	<div class="tableRow">
+		<p> 유형: </p>
+		<p>
+            <input type="radio" name="beantype" value="whole"> 분쇄하지 않은 커피<br>
+            <input type="radio" name="beantype" value="ground" checked> 
+            분쇄한 커피
+		</p>
+	</div>
+	<div class="tableRow">
+		<p> 상품 개수: </p>
+		<p> <input type="number" name="bags" min="1" max="10"> </p>
+	</div>
+	<div class="tableRow label">
+		<p> 배송일자: </p>
+		<p> <input type="date" name="date"> </p>
+	</div>
+	<div class="tableRow">
+		<p> 기타: </p>
+		<p>
+            <input type="checkbox" name="extras[]" value="giftwrap"> 선물 포장<br>
+            <input type="checkbox" name="extras[]" value="catalog" checked>
+            카탈로그 포함
+		</p>
+	</div>
+	<div class="tableRow">
+		<p class="heading"> 배송지 주소</p>
+		<p></p>
+	</div>
+	<div class="tableRow">
+		<p> 이름: </p>
+		<p> <input type="text" name="name" value="" placeholder="Buckaroo Banzai" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> 주소: </p>
+		<p> <input type="text" name="address" value="" placeholder="Banzai Institute" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> 도시: </p>
+		<p> <input type="text" name="city" value="" placeholder="Los Angeles" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> 지역: </p>
+		<p> <input type="text" name="state" value="" placeholder="CA" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> 우편번호: </p>
+		<p> <input type="text" name="zip" value="" placeholder="90050" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> 전화번호: </p>
+		<p> <input type="tel" name="phone" value="" placeholder="310-555-1212" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> 고객 요구사항: </p>
+		<p>
+            <textarea name="comments"></textarea>
+		</p>
+	</div>
+	<div class="tableRow">
+		<p></p>
+		<p> <input type="submit" value="주문"> </p>
+	</div>
+    </form>
+  </body>
+</html>
+

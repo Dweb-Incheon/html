@@ -1,0 +1,60 @@
+body {
+  font-size: small;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.6em;
+}
+
+h1,
+h2 {
+  color: #007e7e;
+}
+
+h1 {
+  font-size: 150%;
+}
+
+h2 {
+  font-size: 130%;
+}
+
+#incheon {
+  line-height: 1.9em;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #444444;
+
+  border-color: darkblue;
+  border-width: 3px;
+  border-style: double;
+}
+
+#guarantee {
+  line-height: 1.9em;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #444444;
+
+  border-color: black;
+  border-width: 1px;
+  border-style: dashed;
+
+  border-top-color: chocolate;
+  border-top-width: 10px;
+  border-top-style: double;
+
+  border-radius: 15px;
+  border-top-left-radius: 110px;
+
+  background-color: #a7cece;
+  padding: 20px;
+  padding-left: 100px;
+  margin: 50px;
+  margin-right: 250px;
+  background-image: url(./images/background.gif);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+/*
+https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg
+*/

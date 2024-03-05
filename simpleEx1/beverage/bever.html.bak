@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title> 음료 종류 </title>
+    </head>
+
+    <body>
+        <h1> 음료 리스트 </h1>
+        <h2> 녹차 </h2>
+        <p>
+            <img src="../images/green.jpg"><br>
+            제주도 ~~~~ 
+        </p>
+
+        <h2> 딸기음료</h2>
+        <p>
+            <img src="../images/red.jpg"><br>
+            신선한 ~~~~ 
+        </p>
+        <h2> 블루베리 </h2>
+        <p>
+            <img src="https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.bloter.net%2Farchives%2F390168&psig=AOvVaw2VLrDWePY-CVeo32ORjMIX&ust=1616756343701000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOjntfGky-8CFQAAAAAdAAAAABAD"><br>
+            눈에 좋은 ~~~~ 
+        </p>
+    </body>
+</html>
