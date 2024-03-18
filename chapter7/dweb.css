@@ -1,0 +1,19 @@
+body {
+  color: brown;
+  font: 1.2rem "Fira Sans", sans-serif;
+}
+
+h1,
+h2 {
+  border-bottom: 2px solid goldenrod;
+  color: goldenrod;
+}
+
+h1,
+h2 {
+  color: red;
+}
+
+p {
+  color: goldenrod;
+}

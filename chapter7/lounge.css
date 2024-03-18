@@ -1,29 +1,44 @@
 body {
-	font-family: sans-serif;
+  font-family: sans-serif;
 }
-h1, h2 {    
-	color: gray;
+h1,
+h2 {
+  color: gray;
 }
-h1 { 
-	border-bottom: 1px solid black;
+h1 {
+  border-bottom: 1px solid black;
 }
 p {
-	color: maroon;
+  color: maroon;
+  border-bottom: 1px solid yellowgreen;
 }
 em {
-	font-family: serif
+  font-family: serif;
 }
 
-p.greentea {
-	color: green;
+.greentea {
+  color: green;
+  border-bottom: 1px solid black;
+}
+
+.strawberry {
+  color: red;
+  border-bottom: 1px solid black;
+}
+
+/* 
+.greentea {
+  color: green;
+}
+.strawberry {
+  color: red;
 }
 p.bluetea {
-	color: blue;
+  color: blue;
 }
 p.purpletea {
-	color: purple;
+  color: purple;
 }
 p.redtea {
-	color: red;
-}
-
+  color: red;
+} */
