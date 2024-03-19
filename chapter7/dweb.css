@@ -2,8 +2,11 @@ body {
   color: brown;
   font: 1.2rem "Fira Sans", sans-serif;
 }
+h1 {
+  color: blue;
+}
 
-h1,
+/* h1,
 h2 {
   border-bottom: 2px solid goldenrod;
   color: goldenrod;
@@ -16,4 +19,4 @@ h2 {
 
 p {
   color: goldenrod;
-}
+} */
