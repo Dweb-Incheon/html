@@ -1,49 +1,49 @@
 body {
-  font-size:           small;
-  font-family:         Verdana, Helvetica, Arial, sans-serif;
-  line-height:         1.6em;
+  font-size: small;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  line-height: 1.6em;
 }
 
-h1, h2 {
-  color:               #007e7e;
+h1,
+h2 {
+  color: #007e7e;
 }
 
 h1 {
-  font-size:           150%;
+  font-size: 150%;
 }
 
 h2 {
-  font-size:           130%;
+  font-size: 130%;
 }
 
 #guarantee {
-  line-height:         1.9em;
-  font-style:          italic;
-  font-family:         Georgia, "Times New Roman", Times, serif;
-  color:               #444444;
-  border-color:        white;
-  border-width:        1px;
-  border-style:        dashed;
-  background-color:    #a7cece;
-  padding:             25px;
-  padding-left:        80px;
-  margin:              30px;
-  margin-right:        250px;
-  background-image:    url(images/background.gif);
-  background-repeat:   no-repeat;
+  line-height: 1.9em;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #444444;
+  border-color: white;
+  border-width: 1px;
+  border-style: dashed;
+  background-color: #a7cece;
+  padding: 25px;
+  padding-left: 80px;
+  margin: 30px;
+  margin-right: 250px;
+  background-image: url(images/background.gif);
+  background-repeat: no-repeat;
   background-position: top left;
 
-  padding-top:    0px;
-  padding-right:  20px;
+  padding-top: 0px;
+  padding-right: 20px;
   padding-bottom: 30px;
-  padding-left:   10px;
+  padding-left: 10px;
 
   padding: 0px 20px 30px 10px;
 }
 
-
-#elixirs{
-  border-width : thin;
+#elixirs {
+  border-width: thick;
   border-style: solid;
   border-color: #007e7e;
   width: 200px;
@@ -57,37 +57,37 @@ h2 {
 
   background-image: url(images/cocktail.gif);
   background-repeat: repeat-x;
-  float:right;
+  float: right;
 }
 
-#elixirs h2{
-  color: black;
+#elixirs h2 {
+  color: red;
 }
-#elixirs h3{
+#elixirs h3 {
   color: #d12c47;
 }
 
-#elixirs{
+#elixirs {
   line-height: 1em;
 }
 
-.cd{
+.cd {
   font-style: italic;
 }
 
-.artist{
+.artist {
   font-weight: bold;
 }
 
-#elixirs a:link{
+#elixirs a:link {
   background: red;
   color: #007e7e;
 }
-#elixirs a:visited{
-  background:black;
+#elixirs a:visited {
+  background: black;
   color: #333333;
 }
-#elixirs a:hover{
+#elixirs a:hover {
   background: #f88396;
   color: #0d5353;
 }

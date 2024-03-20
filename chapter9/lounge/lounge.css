@@ -21,18 +21,19 @@ h2 {
   line-height: 1.9em;
   font-style: italic;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: #444444;
+  color: blue;
 
   border-color: darkblue;
   border-width: 3px;
   border-style: double;
+  /* background-image: url(./images/background.gif); */
 }
 
 #guarantee {
   line-height: 1.9em;
   font-style: italic;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: #444444;
+  color: red;
 
   border-color: black;
   border-width: 1px;
@@ -52,7 +53,7 @@ h2 {
   margin-right: 250px;
   background-image: url(./images/background.gif);
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: bottom right;
 }
 
 /*

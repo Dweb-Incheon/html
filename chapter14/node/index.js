@@ -1,23 +1,32 @@
 const express = require("express");
-var path = require("path");
-const app = express();
-const serveStatic = require("serve-static");
 const bodyParser = require("body-parser");
-app.use(bodyParser.urlencoded({ extended: false }));
 
+const app = express();
 const port = 3000;
 
-app.use(serveStatic(__dirname));
+// Middleware to parse JSON and urlencoded bodies
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/get_form", function (req, res) {
-  console.log(req.query.firstname, req.query.lastname);
+// Serve the HTML form
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/index.html");
 });
 
-app.post("/post_form", function (req, res) {
-  //console.log(req.headers)
-  console.log(req.body.firstname, req.body.lastname);
+// Handle form submission (POST request)
+app.post("/submit", (req, res) => {
+  const name = req.body.name;
+  const email = req.body.email;
+  const message = req.body.message;
+
+  // Here, you can process the form data (e.g., save to a database)
+  console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
+
+  // Send a response back to the client
+  res.send("Form submitted successfully!");
 });
 
-app.listen(port, function () {
-  console.log("Server is running...");
+// Start the server
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
 });
